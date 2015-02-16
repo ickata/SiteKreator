@@ -2,33 +2,41 @@
 <script type="text/javascript" src="/Shared/Scripts/MooToolsMore/Fx/Fx.Slide.js"></script>
 <script type="text/javascript" src="/Shared/UIComponents/Internal/Collapsibles/Scripts/collapsibles.js"></script>
 
+<link type="text/css" rel="stylesheet" href="/Shared/UIComponents/Internal/Tabs/css/tabs.css">
+<script type="text/javascript" src="/Shared/UIComponents/Internal/Tabs/Scripts/tabs.js"></script>
+
 <link rel="stylesheet" type="text/css" href="/Apps/Profiler/css/properties.css">
 <script type="text/javascript" src="/Apps/Profiler/Scripts/properties.js"></script>
 
-<fieldset>
-   <legend>Profile</legend>
-   <div>
-      <div class="label"><label>Name</label></div>
-      <div class="field"><input type="text" name="property__name"></div>
+<div id="tabs-holder"></div>
+<div id="content-holder">
+   <div id="tab-content-1">
+      <fieldset>
+         <legend>Profile</legend>
+         <div>
+            <div class="label"><label>Name</label></div>
+            <div class="field"><input type="text" name="property__name"></div>
+         </div>
+         <div>
+            <div class="label"><label>Birth date</label></div>
+            <div class="field"><input type="text" name="property__birthdate"></div>
+         </div>
+      </fieldset>
    </div>
-   <div>
-      <div class="label"><label>Birth date</label></div>
-      <div class="field"><input type="text" name="property__birthdate" id="date"></div>
-   </div>
-</fieldset>
-
-<div id="my-collapsibles">
-   <div class="sk-collapsible-section">
-      <div class="sk-collapsible-caption">Avatar</div>
-      <div class="sk-collapsible-content">
-         TODO
+   <div id="tab-content-2">
+      <div id="my-collapsibles">
+         <div class="sk-collapsible-section">
+            <div class="sk-collapsible-caption">Avatar</div>
+            <div class="sk-collapsible-content">
+               TODO
+            </div>
+         </div>
+         <div class="sk-collapsible-section">
+            <div class="sk-collapsible-caption">Short bio</div>
+            <div class="sk-collapsible-content">
+               <textarea name="property__bio"></textarea>
+            </div>
+         </div>
       </div>
    </div>
-   <div class="sk-collapsible-section">
-      <div class="sk-collapsible-caption">Short bio</div>
-      <div class="sk-collapsible-content">
-         <textarea name="property__bio"></textarea>
-      </div>
-   </div>
-</div>
 </div>

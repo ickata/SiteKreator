@@ -16,10 +16,21 @@ SK.Applications.Profiler = new Class({
    
    initUI : function () {
       this.initCollapsibles();
+      this.initTabs();
    },
    
    initCollapsibles : function () {
       new SK.UI.Collapsibles('my-collapsibles');
+   },
+   
+   initTabs : function () {
+      new SK.UI.Tabs({
+         tabs: [ 'Basic', 'Advanced' ],
+         tabs_holder: 'tabs-holder',
+         tab_bodies: ['tab-content-1', 'tab-content-2'],
+         enable_add: false,
+         enable_delete: false
+      });
    }
    
 });
