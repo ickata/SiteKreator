@@ -17,6 +17,7 @@ SK.Applications.Profiler = new Class({
    initUI : function () {
       this.initCollapsibles();
       this.initTabs();
+      this.initDatePicker();
    },
    
    initCollapsibles : function () {
@@ -31,6 +32,10 @@ SK.Applications.Profiler = new Class({
          enable_add: false,
          enable_delete: false
       });
+   },
+   
+   initDatePicker : function () {
+      new SK.UI.DatePicker( document.id('date') );
    }
    
 });
