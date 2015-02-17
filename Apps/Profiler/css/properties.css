@@ -1,0 +1,9 @@
+textarea {
+   display: block;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+#motto .btn-motto {
+   margin-top: 10px;
+}

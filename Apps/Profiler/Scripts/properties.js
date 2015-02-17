@@ -6,6 +6,7 @@ SK.Applications.Profiler = new Class({
    
    initialize  : function () {
       this.parent.apply( this, arguments );
+      this.addEvent('randommotto', this.generateRandomMotto);
       window.addEvent('load', this.init.bind(this) );
    },
    
@@ -18,6 +19,7 @@ SK.Applications.Profiler = new Class({
       this.initCollapsibles();
       this.initTabs();
       this.initDatePicker();
+      this.initButton();
    },
    
    initCollapsibles : function () {
@@ -36,6 +38,22 @@ SK.Applications.Profiler = new Class({
    
    initDatePicker : function () {
       new SK.UI.DatePicker( document.id('date') );
+   },
+   
+   initButton : function () {
+      new SK.UI.Properties.Button(this, {
+         caption  : 'Generate Random',
+         event    : 'randommotto',
+         'class'  : 'btn-secondary btn-motto'
+      }).inject( document.id('motto') );
+   },
+   
+   generateRandomMotto : function () {
+      document.id('text-motto').value = [
+         "You can talk about us, but you can't talk without us!",
+         "I didn't go to high school, I went to school high",
+         "I ain't sleeping. I'm just taking a good look at the insides of my eyelids."
+      ].getRandom();
    }
    
 });
