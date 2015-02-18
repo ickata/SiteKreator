@@ -3,7 +3,7 @@
    "id": "4321",
    "name": "Profiler",
    "description": "Demo app - showcase of different UI components",
-   "icon": "http://img-sandbox.bg.nc/Apps/HelloWorld/icon.png",
+   "icon": "http://qa.sitekreator.com/Apps/HelloWorld/icon.png",
    "tags": [ "ui", "profile" ],
    "authors": [ "System" ],
    "site": "",
@@ -16,21 +16,21 @@
          {
             "id": "Profiler",
             "caption": "Profiler",
-            "icon": "http://img-sandbox.bg.nc/Apps/HelloWorld/icon.png",
+            "icon": "http://qa.sitekreator.com/Apps/HelloWorld/icon.png",
             "categories": ["add_ons"],
             "properties_add": {
-               "source": "http://img-sandbox.bg.nc/Apps/Profiler/properties.htm",
+               "source": "http://h.bg.nc/Apps/Profiler/properties.htm",
                "init": "SK.Applications.Profiler"
             },
             "properties_edit": {
-               "source": "http://img-sandbox.bg.nc/Apps/Profiler/properties.htm",
+               "source": "http://h.bg.nc/Apps/Profiler/properties.htm",
                "init": "SK.Applications.Profiler"
             },
             "display_admin": {
-               "source": "http://img-sandbox.bg.nc/Apps/Profiler/display.htm"
+               "source": "http://h.bg.nc/Apps/Profiler/display.htm"
             },
             "display_user": {
-               "source": "http://img-sandbox.bg.nc/Apps/Profiler/display.htm"
+               "source": "http://h.bg.nc/Apps/Profiler/display.htm"
             }
          }
       ]
