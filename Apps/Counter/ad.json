@@ -1,0 +1,32 @@
+{
+   "framework_version": "1.0",
+   "id": "2001",
+   "name": "Counter",
+   "description": "Counts page visits.",
+   "icon": "http://img-sandbox.bg.nc/Apps/Counter/Images/icon.png",
+   "tags": [ "counter" ],
+   "authors": [ "System" ],
+   "site": "",
+   "version": "1.0",
+   
+   "availability": "public",
+   
+   "bindings": {
+      "lifecycle": {
+         "install": {
+            "source": "http://img-sandbox.bg.nc/Apps/Counter/install.htm",
+            "init": "SK.Applications.Counter"
+         }
+      },
+      "pages": {
+         "footer_admin": {
+            "source": "http://img-sandbox.bg.nc/Apps/Counter/footer.htm",
+            "init": "SK.Applications.Counter"
+         },
+         "footer_user": {
+            "source": "http://img-sandbox.bg.nc/Apps/Counter/footer.htm",
+            "init": "SK.Applications.Counter"
+         }
+      }
+   }
+}
